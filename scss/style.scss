@@ -476,6 +476,7 @@ p {
 }
 
 .step {
+	min-height: 50vh;
 	padding: 3rem 0;
 	&__inner {
 		display: flex;
@@ -695,6 +696,7 @@ p {
 }
 
 .about {
+	min-height: 50vh;
 	padding-top: 3rem;
 	&__inner {
 		display: flex;
@@ -755,6 +757,7 @@ p {
 }
 
 .partners {
+	min-height: 50vh;
 	padding-top: 10rem;	
 	padding-bottom: 7rem;
 	&__list {
@@ -804,6 +807,7 @@ p {
 }
 
 .subscribe {
+	min-height: 50vh;
 	padding: 5rem 0;
 	margin-bottom: 5rem;
 	&__inner {
@@ -931,6 +935,8 @@ p {
 }
 
 .footer {
+	min-height: 50vh;
+	margin-top: 2rem;
 	position: relative;
 	overflow: hidden;
 	&__inner {
@@ -1057,6 +1063,7 @@ p {
 		transition: 0.5s;
 		&:hover {
 			transform: scale(1.1);
+			color: #FF7D68;
 			transition: 0.5s;
 		}
 	}
@@ -1078,6 +1085,67 @@ p {
 		position: absolute;
 		bottom: -25rem;
 		right: -28rem;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.footer {
+		&__inner {
+			display: flex;
+			flex-direction: column;
+			padding-top: 4rem;
+			justify-content: center;
+			align-items: center;
+		}
+		.jadoo {
+			order: 1;
+		}
+		&__info-text {
+			order: 2;
+			margin-bottom: 1rem;
+		}
+		.company {
+			order: 3;
+		}
+		.about-item {
+			order: 4;
+		}	
+		.careers {
+			order: 5;
+		}
+		.mobile {
+			order: 6;
+			margin-bottom: 1rem;
+		}
+		.contact {
+			order: 7;
+		}
+		.help {
+			order: 8;
+		}
+		.press {
+			order: 9;
+		}
+		.airline {
+			order: 13;
+		}
+		.more {
+			order: 11;
+		}
+		.airlinefees {
+			order: 12;
+		}
+		.affilates {
+			order: 10;
+			margin-bottom: 1rem;
+		}
+		.tips {
+			order: 14;
+			margin-bottom: 1rem;
+		}
+		&__social {
+			order: 15;
+		}
 	}
 }
 
@@ -1162,6 +1230,7 @@ p {
 		}
 	}
 	.subscribe {
+		margin-bottom: 2rem;
 		&__content {
 			max-width: 90%;
 
@@ -1182,24 +1251,7 @@ p {
 	}
 	.footer {
 		&__inner {
-			grid-template-columns: 1fr;
+			margin-top: 10rem;
 		}
 	}
 }
-
-// @media screen and (max-width:480px) {
-// 	.about {
-// 		&__inner {
-// 			flex-wrap: wrap;
-// 		}
-// 		&__info,
-// 		&__content {
-// 			width: 100%;
-// 		}
-// 	}
-// 	.partners {
-// 		&__list {
-// 			gap: 4rem;
-// 		}
-// 	}
-// }
